@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "music-assistant-bot"
+version = "0.1.0"
+description = "Telegram bot for music sorting, filtering and other"
+authors = ["PythonBeaverScientist <tokamak663@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic-settings = "^2.8.1"
+pyyaml = "^6.0.2"
+aiogram = "^3.18.0"
+
+
+[tool.poetry.group.dev.dependencies]
+isort = "^6.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
