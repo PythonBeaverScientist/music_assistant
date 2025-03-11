@@ -9,6 +9,7 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file='.env', env_file_encoding='utf-8')
 
     BOT_API_TOKEN: str = 'bot_api_token'
+    WEB_APP_URL: str = 'web_app_url'
     LOG_CONFIG_PATH: str = 'logging.yml'
 
     LOG_CONFIG: dict = {}

@@ -15,7 +15,7 @@ dp = Dispatcher()
 
 @dp.message(CommandStart())
 async def command_start_handler(message: Message) -> None:
-    keyboard_button = KeyboardButton(text='Open Web Page', web_app=WebAppInfo(url='https://github.com/aiogram/aiogram'))
+    keyboard_button = KeyboardButton(text='Open Web Page', web_app=WebAppInfo(url=settings.WEB_APP_URL))
     markup = ReplyKeyboardMarkup(keyboard=[[keyboard_button,]])
     await message.answer(
         f"Hello, {html.bold(message.from_user.full_name)}! You are welcome to open web page",
